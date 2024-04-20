@@ -1,0 +1,48 @@
+.Admin {
+    width: 100%;
+    min-height: calc(100vh - 50px - 50px);
+    background-color: #ffffff;        
+}
+.Admin h1 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+.Admin p {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Admin input {
+    width: auto;
+    height: 30px;  
+    margin: 5px;
+}
+.Admin button {
+    width: 170px;
+    height: 30px;
+    margin: 5px;
+    background-color: #bfbfed;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.Admin button:hover {
+    background-color: #9898c5;
+}
+.calcs {
+    margin: 10px;
+    display: flex;
+    border-top: solid 1px black;
+    border-bottom: solid 1px black;    
+}
+.calcs p {
+    width: calc((100% - 170px - 170px) / 2);    
+}
+.calcs button {
+    width: 170px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.calcs input {
+    width: 100px;
+    margin: 5px;   
+}
