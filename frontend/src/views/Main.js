@@ -4,7 +4,7 @@ import './Main.css';
 function Main() {
 
   const[products, setProducts] = useState([])
-  const [value, setValue] = useState(null);
+  const [value, setValue] = useState('null');
 
   //получение данных калькуляторов из бд
   useEffect(() => {
@@ -24,7 +24,7 @@ function Main() {
 
   //калькулятор выбран пользователем
   function Selected () {
-    if (value !== null) {       
+    if (value !== 'null') {       
       const calculator = products.find((item) => item._id === value)
       const name = calculator.name
       const rate = calculator.rate
@@ -106,7 +106,7 @@ function Main() {
       <h1>Калькулятор кредитного продукта</h1>
       <p>Выберите в списке тот кредит, который Вас интересует</p>      
       <select value={value} onChange={(event) => setValue(event.target.value)}>
-        <option selected disabled>Выберите калькулятор</option>
+        <option defaultValue={'null'} disabled>Выберите калькулятор</option>
         {options}
       </select>
       <Selected />     

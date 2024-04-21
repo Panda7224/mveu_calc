@@ -22,12 +22,6 @@ const generateAccessToken = (id, login) => {
     return jwt.sign(payload, secret, {expiresIn: '24h'})
 }
 
-// калькулятор/админ
-// const calc1 = new Calculator({name: "Ипотечный калькулятор", rate: 9,6, minimum: 100000}) //
-// calc1.save() 
-// console.log("Сохранен объект", calc1)
-// const admin = new Admin ({login: "admin", password: "admin", email: "bank@bank.ru"}) 
-// admin.save()
 
 //авторизация администратора
 app.post('/login', async (req, res) => {
